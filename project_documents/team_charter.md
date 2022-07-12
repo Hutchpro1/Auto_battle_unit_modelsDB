@@ -97,6 +97,6 @@ rotating or permanent roles as you go.*
 **I agree to the terms and conditions of these team agreements:**
 
 * Team member (a) Name & Date: David Ricardo Ramirez Alvarez a.k.a. "Patas"  July 12, 2022 2.22 PM
-* Team member (b) Name & Date: 
+* Team member (b) Name & Date: Pedro Elias Linares July 12, 2022 3:33 PM
 * Team member (c) Name & Date:
 * Team member (d) Name & Date:

@@ -1,33 +1,4 @@
-# [team name] Team Charter
-
-## Instructions
-
-*Answer the questions below and fill out the process sections with your team’s
-mechanisms to follow your answers. Remove the italicized examples text as you
-go.*
-
-## Purpose
-
-As we learned from the reading, highly performing teams have the following
-qualities:
-
-* Psychological safety
-* Dependability
-* Structure and clarity
-* Meaning
-* Impact
-
-Your team’s charter captures the ways in which your team will commit to
-providing and cultivating these qualities. Provide the information requested in
-this charter, but feel free to modify the formatting to best suit your team’s
-needs and style.
-
-## Resources to complete your charter
-
-These resources may be helpful as you fill out your team charter. They are optional, but may help you develop your charter:
-
-* [Discussion Guide to the qualities above](https://docs.google.com/document/d/1lgiz6mwZeyWEaJxN_NMI-tI5Qijv2BHh27DPLeSLE40)
-* [Setting SMART goals](https://www.mindtools.com/pages/article/smart-goals.htm)
+# Chicken and the Egg^3 Team Charter
 
 ## Charter
 
@@ -35,90 +6,77 @@ These resources may be helpful as you fill out your team charter. They are optio
 
 |Name            |Preferred Contact Method (Zoom, Slack, email, etc.) |
 |---	           |---                                           |
-|Team Member (a) |                                              |
-|Team Member (b) |                                              |
-|Team Member (c) |                                              |
-|Team Member (d) |                                              |
+|Jonathan Riedemann|Slack, Zoom                                   |
+|Pedro Linares     |Slack, Zoom                                   |
+|David Ramirez     |Slack, Zoom                                   |
 
 ### Psychological safety
 
 * **How can we take risks on this team without feeling insecure or
-  embarrassed?**
-    *E.g., Be open to opinions that differ from your own, actively ask for
-    opinions from each member of the team, do not interrupt each other, don’t
-    place blame, all suggestions or questions are encouraged, listened to,
-    considered equally, and never judged*
-
-* **How do we address situations where any team member feels unsafe?**
-    *E.g., communicate when there is a misunderstanding, don’t move forward
-    until the situation is resolved, directly address and resolve negativity,
-    give and receive feedback with a positive, strength-building mindset, if
-    necessary, escalate to a BloomTech staff member*  
+  embarrassed?**<br />
+We the people of Chicken and the Egg^3, Hereby do solemnly swear to respect other team members opinions. we shall
+team members to give their opinions without putting them down or making them fell stupid. 
+* **How do we address situations where any team member feels unsafe?**<br />
+  We the people of Chicken and the Egg^3, Hereby do solemnly swear to ensure that every member feels safe to speak
+freely in any situation. and ensure that our criticism are constructive.
 
 ### Dependability, Structure, Clarity
 
-* **How can we count on each other to do high quality work on time?**
-     *E.g., estimate task size, break down large tasks, call out tasks at risk
-     early, ask each other for help, how to ensure timely code reviews, how to
-     share knowledge, help each other hold accountability give frequent,
-     scheduled updates*  
+* **How can we count on each other to do high quality work on time?**<br />
+  We the people of Chicken and the Egg^3, Hereby do solemnly swear to hold regular meetings to asses our progress.
+as well as helping each other with any issues that come our way.
 
-* **How do we address missed deadlines?**
-     *E.g., acknowledge, but don’t punish slipped dates, figure out what went
-     wrong, identify lessons for future*
+* **How do we address missed deadlines?**<br />
+  We the people of Chicken and the Egg^3, Hereby do solemnly swear to commit hari kari if a deadline is missed.
 
-* **How can we make goals, roles, and execution plans on our team clear?**
-     *E.g., where to track goals and when to review them, use definitive,
-     quantifiable terminology, include clear background on why this goal is
-     necessary, include “done” criteria for the goal (code is pushed with
-     integration tests, document is reviewed, etc.)*
-
+* **How can we make goals, roles, and execution plans on our team clear?**<br />
+  We the people of Chicken and the Egg^3, Hereby do solemnly swear to use a ticket system(trello) to follow our progress
+and to keep track of what work is assigned to whom.
 
 ### Goals
 
-* **Overall: What is our overall objective for the Learn & Be Curious unit?**
-    *E.g., “Apply what we’ve learned throughout BloomTech in a team project to prepare
-    ourselves for internships and full-time SDE roles.”*
+* **Overall: What is our overall objective for the Learn & Be Curious unit?**<br />
+    Our goal is to develop a team oriented programing mindset, learn more about programing tools and to 
+create the best damn game there is.
 
 
-* **Performance: What do we want to prioritize in terms of what we achieve?**
-    *What will be true when you have 'succeeded' on this project? E.g. enjoy
-    ourselves, maintain our energy to the end, ensure all team members
-    participate, create professional connections, exceed instructor
-    expectations, efficiently pace the project so we’re not rushing at the end,
-    etc.*
+* **Performance: What do we want to prioritize in terms of what we achieve?**<br />
+    Our priority will be to achieve a working alpha of our game.
 
 
-* **Learning: What are the things that our team wants to learn?**
-    *E.g., develop SDE knowledge, enhance leadership skills, master project
-    planning, improve testing skills, etc*
+* **Learning: What are the things that our team wants to learn?**<br />
+    AWS, API, Multiplayer gaming, JavaScript, html and css.
 
 
 * **Task processes: What processes will our team follow to meet our goals,
-  complete tasks, or to build team relationships?**
-    *E.g., leadership, meeting procedures/length of meetings, expectations for
-    meeting attendance and timeliness, other types of meetings (happy hours,
-    lunch and learns)*
+  complete tasks, or to build team relationships?**<br />
+    Daily meetings, "Testing" games, more meetings.
 
 
 ## Meaning & Impact
 
 **What is personally important for each team member about joining BloomTech? About
-becoming an software engineer?**
+becoming an software engineer?**<br />
 
-* *Team member name*:
-* *Team member name*:
-* *Team member name*:
-* *Team member name*:
+* *Team member name*: Jonathan<br />
+    "Further my career in software development."
+* *Team member name*: Pedro<br />
+"Expand my knowledge in java and backend development."
+* *Team member name*: David<br />
+"To make a career out of programing, work from home, and make games."
+
 
 **What each team member wants to achieve: e.g. improve analytical skills, learn
 project management skills, develop public speaking skills, speak up more, speak
 up less, etc.**
 
-* *Team member name*:
-* *Team member name*:
-* *Team member name*:
-* *Team member name*:
+* *Team member name*:Jonathan<br />
+ "Um... to improve teamworking skills."
+* *Team member name*:Pedro<br />
+ "to ugh... develop aws skills and to develop teamwork skills"
+* *Team member name*:David<br />
+"To learn how to work with a team when programing."
+
 
 ## Team Member Roles and Responsibilities
 
@@ -129,16 +87,16 @@ rotating or permanent roles as you go.*
 
 |**Role**               |**Responsibilities** |**Primary person** |**Secondary person** |
 |---                    |---                  |---                |---                  |
-|Liaison to Instructors | Main contact to instructor to give status updates, including team dynamics, project progress, etc |||
-|Rotating Role 1        |                     |                   |                     |
-|Rotating Role 2        |                     |                   |                     |
-|Rotating Role 3        |                     |                   |                     |
+|Scrum Guy/Leader    | Main contact to instructor to give status updates, including team dynamics, project progress, etc |Person of the week.| no alt.|
+|Treasurer/Secretary | holds nonexistent money and writes everything down in meetings.| David          |     Jonathan                |
+|Frontend Programmer | develops the frontend.                                         | Jonathan       |  Pedro                   |
+|Backend Programmer  | develops the backend.                                          | Pedro          |     David                |
 
 ## Acknowledgement
 
 **I agree to the terms and conditions of these team agreements:**
 
-* Team member (a) Name & Date:
-* Team member (b) Name & Date:
+* Team member (a) Name & Date: David Ricardo Ramirez Alvarez a.k.a. "Patas"  July 12, 2022 2.22 PM
+* Team member (b) Name & Date: 
 * Team member (c) Name & Date:
 * Team member (d) Name & Date:

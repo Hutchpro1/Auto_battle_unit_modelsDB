@@ -73,26 +73,56 @@ would love to do with more time.*
 
 # 5. Proposed Architecture Overview
 
-*Describe broadly how you are proposing to solve for the requirements you
-described in Section 2.*
 
-*This may include class diagram(s) showing what components you are planning to
-build.*
-
-*You should argue why this architecture (organization of components) is
-reasonable. That is, why it represents a good data flow and a good separation of
-concerns. Where applicable, argue why this architecture satisfies the stated
-requirements.*
+1. Deterministic logic for battles: <br />
+To remove any chances or percentage calculation in the simulation of the battle 
+2. Character movement. <br />
+Turn based system that is based of the initiative stat of the units on the board with a simple path find algorithm 
+3. Stats Format for characters and what stats to include. <br />
+Initial launch we are using Attack damage, Defensive armor, and Health. later we will add magic system and other statistics for units
+4. Setup For AI, then setup multiplayer <br />
+AI system will be built into the unit logic and other for single player we will just use default board layouts.
+5. API calls backend. <br />
+Using AWS cloudformation, DynamoDB, S3 Bucket, API Gateway, and Lambda functions.
+6. Frontend. <br />
+Using Node.js, Axios, and React.
 
 # 6. API
 
 ## 6.1. Public Models
 
-*Define the data models your service will expose in its responses via your
-*`-Model`* package. These will be equivalent to the *`PlaylistModel`* and
-*`SongModel`* from the Unit 3 project.*
+UnitModel
+    String name;
+    int health;
+    int defence;
+    int attackDamage;
+
+CurrentUnitModel
+    String unitID;
+    String name;
+    String boardLocation;
+    int maxHealth;
+    int maxDefence;
+    int maxAttackDamage;
+    List<ItemName> itemIDs;
+    
+ItemModel
+    String name;
+    int healthMod;
+    int defenceMod;
+    int attackDamageMod;
+
+BoardModel
+    String boardID;
+    List<CurrentUnitIDs> units;
 
 ## 6.2. *First Endpoint*
+
+StartGame
+GetItemData
+GetUnitData
+UpdateBoard
+UpdateUnit
 
 *Describe the behavior of the first endpoint you will build into your service
 API. This should include what data it requires, what data it returns, and how it

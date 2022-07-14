@@ -74,6 +74,8 @@ would love to do with more time.*
 # 5. Proposed Architecture Overview
 
 
+![Chicken and Egg Service Architecture](C:\Users\MS1\Bloomtech\BD6\5.1\Sprint_1\bd-team-project-chicken-and-the-egg-3\project_documents\images\Chicken-and-egg-service-p3-Service-Architecture.png)
+
 1. Deterministic logic for battles: <br />
 To remove any chances or percentage calculation in the simulation of the battle 
 2. Character movement. <br />
@@ -91,38 +93,41 @@ Using Node.js, Axios, and React.
 
 ## 6.1. Public Models
 
-UnitModel
-    String name;
-    int health;
-    int defence;
-    int attackDamage;
+UnitModel<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;int health;<br />
+&nbsp;&nbsp;int defence;<br />
+&nbsp;&nbsp;int attackDamage;<br />
 
-CurrentUnitModel
-    String unitID;
-    String name;
-    String boardLocation;
-    int maxHealth;
-    int maxDefence;
-    int maxAttackDamage;
-    List<ItemName> itemIDs;
+CurrentUnitModel<br />
+&nbsp;&nbsp;String unitID;<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;String boardLocation;<br />
+&nbsp;&nbsp;int maxHealth;<br />
+&nbsp;&nbsp;int maxDefence;<br />
+&nbsp;&nbsp;int maxAttackDamage;<br />
+&nbsp;&nbsp;List `<ItemName>` itemIDs;
     
-ItemModel
-    String name;
-    int healthMod;
-    int defenceMod;
-    int attackDamageMod;
+ItemModel<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;int healthMod;<br />
+&nbsp;&nbsp;int defenceMod;<br />
+&nbsp;&nbsp;int attackDamageMod;<br />
 
-BoardModel
-    String boardID;
-    List<CurrentUnitIDs> units;
+BoardModel<br />
+&nbsp;&nbsp;String boardID;<br />
+&nbsp;&nbsp;List`<CurrentUnitIDs>`units;
 
-## 6.2. *First Endpoint*
+StartGame<br />
+GetItemData<br />
+GetUnitData<br />
+UpdateBoard<br />
+UpdateUnit<br />
 
-StartGame
-GetItemData
-GetUnitData
-UpdateBoard
-UpdateUnit
+## 6.2. Post StartGame EndPoint
+
+
+
 
 *Describe the behavior of the first endpoint you will build into your service
 API. This should include what data it requires, what data it returns, and how it
@@ -149,6 +154,31 @@ may be helpful to first think of what objects your service will need, then
 translate that to a table structure, like with the *`Playlist` POJO* versus the
 `playlists` table in the Unit 3 project.*
 
+Units<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;int health;<br />
+&nbsp;&nbsp;int defence;<br />
+&nbsp;&nbsp;int attackDamage;<br />
+
+CurrentUnits<br />
+&nbsp;&nbsp;String unitID;<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;String boardLocation;<br />
+&nbsp;&nbsp;int maxHealth;<br />
+&nbsp;&nbsp;int maxDefence;<br />
+&nbsp;&nbsp;int maxAttackDamage;<br />
+&nbsp;&nbsp;List `<ItemName>` itemIDs;
+
+Items<br />
+&nbsp;&nbsp;String name;<br />
+&nbsp;&nbsp;int healthMod;<br />
+&nbsp;&nbsp;int defenceMod;<br />
+&nbsp;&nbsp;int attackDamageMod;<br />
+
+Boards<br />
+&nbsp;&nbsp;String boardID;<br />
+&nbsp;&nbsp;List`<CurrentUnitIDs>`units;
+
 # 8. Pages
 
 *Include mock-ups of the web pages you expect to build. These can be as
@@ -158,3 +188,16 @@ pages. It should be clear what the interactions will be on the page, especially
 where customers enter and submit data. You may want to accompany the mockups
 with some description of behaviors of the page (e.g. “When customer submits the
 submit-dog-photo button, the customer is sent to the doggie detail page”)*
+
+
+
+1. Main Game Page 
+
+![Main Game Page](C:\Users\MS1\Bloomtech\BD6\5.1\Sprint_1\bd-team-project-chicken-and-the-egg-3\project_documents\images\GamePage.png)
+2. Login Page ( Phase II )
+
+![login Page](images/loginpage.png)
+
+3. Leader Board ( Phase II )
+
+![Leader Board](images/Leaderboard.png)

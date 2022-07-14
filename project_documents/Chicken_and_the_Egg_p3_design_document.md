@@ -73,8 +73,7 @@ would love to do with more time.*
 
 # 5. Proposed Architecture Overview
 
-
-![Chicken and Egg Service Architecture](C:\Users\MS1\Bloomtech\BD6\5.1\Sprint_1\bd-team-project-chicken-and-the-egg-3\project_documents\images\Chicken-and-egg-service-p3-Service-Architecture.png)
+![Chicken-and-egg-service-p3-Service-Architecture](images/Chicken-and-egg-service-p3-Service-Architecture.png)
 
 1. Deterministic logic for battles: <br />
 To remove any chances or percentage calculation in the simulation of the battle 
@@ -118,34 +117,26 @@ BoardModel<br />
 &nbsp;&nbsp;String boardID;<br />
 &nbsp;&nbsp;List`<CurrentUnitIDs>`units;
 
-StartGame<br />
-GetItemData<br />
-GetUnitData<br />
-UpdateBoard<br />
-UpdateUnit<br />
+## 6.2 Post StartGame EndPoint
+* Accepts Post request to /StartGame
+* Accepts Board Model
 
-## 6.2. Post StartGame EndPoint
+## 6.3 Get ItemData EndPoint
+* Accepts Get Request to /ItemData
+* Return List of ItemData Models
 
+## 6.4 Get UnitData EndPoint
+* Accepts Get Request to /UnitData
+* Return List of UnitData Models
 
+## 6.5 Put UpdateBoard EndPoint
+* Accept Put Request to /BoardData
+* Accepts Board Model 
 
+## 6.6 Put UpdateUnit EndPoint
+* Accepts Put Request to /UnitData
+* Accepts Unit Model
 
-*Describe the behavior of the first endpoint you will build into your service
-API. This should include what data it requires, what data it returns, and how it
-will handle any known failure cases. You should also include a sequence diagram
-showing how a user interaction goes from user to website to service to database,
-and back. This first endpoint can serve as a template for subsequent endpoints.
-(If there is a significant difference on a subsequent endpoint, review that with
-your team before building it!)*
-
-*(You should have a separate section for each of the endpoints you are expecting
-to build...)*
-
-## 6.3 *Second Endpoint*
-
-*(repeat, but you can use shorthand here, indicating what is different, likely
-primarily the data in/out and error conditions. If the sequence diagram is
-nearly identical, you can say in a few words how it is the same/different from
-the first endpoint)*
 
 # 7. Tables
 
@@ -191,13 +182,11 @@ submit-dog-photo button, the customer is sent to the doggie detail page”)*
 
 
 
-1. Main Game Page 
+1. Main Game Page
+![Game Page](images/GamePage.png)
 
-![Main Game Page](C:\Users\MS1\Bloomtech\BD6\5.1\Sprint_1\bd-team-project-chicken-and-the-egg-3\project_documents\images\GamePage.png)
 2. Login Page ( Phase II )
-
 ![login Page](images/loginpage.png)
 
 3. Leader Board ( Phase II )
-
 ![Leader Board](images/Leaderboard.png)

@@ -30,6 +30,13 @@ df mod:  100
 at mod:  10
 as mod:  0
 
+Name:   Lance & Shield
+recipe: Shield/Sword
+Hp mod: 100
+df mod: 50
+at mod: 40
+as mod: 0
+
 Name:   Parrying Shield
 recipe: Shield/dagger
 Hp mod: 50
@@ -50,8 +57,8 @@ Hp mod: 200
 df mod: 30
 at mod: 80
 as mod: 0
-Name: Balanced Rapier
 
+Name: Balanced Rapier
 recipe: Sword/Dagger
 Hp mod: 0
 df mod: 15

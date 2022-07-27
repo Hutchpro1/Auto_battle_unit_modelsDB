@@ -1,0 +1,87 @@
+
+Name: Shield
+Hp mod: 0
+df mod: 30
+at mod: 0
+as mod: 0
+
+Name: Sword
+Hp mod: 0
+df mod: 0
+at mod: 20
+as mod: 0
+
+Name: Dagger
+Hp mod: 0
+df mod: 0
+at mod: 0
+as mod: 15
+
+Name: belt
+Hp mod: 100
+df mod: 0
+at mod: 0
+as mod: 0
+
+Name:    Reinforced Spike Shield
+recipe: Shield/shield
+Hp mod:  30
+df mod:  100
+at mod:  10
+as mod:  0
+
+Name:   Parrying Shield
+recipe: Shield/dagger
+Hp mod: 50
+df mod: 35
+at mod: 0
+as mod: 25
+
+Name: Fortyfing Bulwark
+recipe: Shield/Belt
+Hp mod: 150
+df mod:60
+at mod:10
+as mod:0
+
+Name: Great Sword
+recipe: Sword/Sword
+Hp mod: 200
+df mod: 30
+at mod: 80
+as mod: 0
+Name: Balanced Rapier
+
+recipe: Sword/Dagger
+Hp mod: 0
+df mod: 15
+at mod: 50
+as mod: 25
+
+Name: Inspiring Banner
+recipe: Sword/Belt
+Hp mod: 300
+df mod: 20
+at mod: 40
+as mod: 0
+
+Name: Twin Daggers
+recipe: Dagger/Dagger
+Hp mod: 0
+df mod: 20
+at mod: 30
+as mod: 70
+
+Name: Inspiring Banner
+recipe: Dagger/Belt
+Hp mod: 150
+df mod: 30
+at mod: 0
+as mod: 45
+
+Name: Suspenders of Hope
+recipe: Belt/Belt
+Hp mod: 500
+df mod: 80
+at mod: 30
+as mod: 0

@@ -109,7 +109,7 @@ Resources:
         # 2020-02-27: [bp] updated from nodejs10.x in case it matters
         Runtime: nodejs12.x
         Timeout: 60
-    InitializeEventsTable:
+    InitializeCurrentUnitModelTable:
       Type: Custom::InitFunction
       DependsOn: CurrentUnitModelTable
       Properties:

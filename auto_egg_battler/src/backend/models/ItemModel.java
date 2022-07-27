@@ -12,6 +12,9 @@ public class ItemModel {
     private Integer defenceMod;
     private Integer attackDamageMod;
 
+    private Integer attackSpeedMod;
+
+
     @DynamoDBHashKey(attributeName = "name")
     public String getName() {
         return name;
@@ -47,4 +50,14 @@ public class ItemModel {
     public void setAttackDamageMod(Integer attackDamageMod) {
         this.attackDamageMod = attackDamageMod;
     }
+
+    @DynamoDBAttribute(attributeName = "attackSpeedMod")
+    public Integer getAttackSpeedMod() {
+        return attackSpeedMod;
+    }
+
+    public void setAttackSpeedMod(Integer attackSpeedMod) {
+        this.attackSpeedMod = attackSpeedMod;
+    }
+
 }

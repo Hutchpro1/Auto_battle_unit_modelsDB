@@ -52,30 +52,154 @@ Resources:
                   {
                     PutRequest: {
                       Item: {
-                        name: "fireSpell",
-                        healthMod: 50,
-                        defenseMod: 10,
-                        attackDamageMod 20
+                        name: "Shield",
+                        healthMod: 0,
+                        defenseMod: 30,
+                        attackDamageMod 0,
+                        attackSpeedMod 0
                       }
                     }
                   },
                   {
                     PutRequest: {
                       Item: {
-                        name: "shield",
-                        healthMod: 50,
-                        defenseMod: 10,
-                        attackDamageMod 20
+                        name: "Sword",
+                        healthMod: 0,
+                        defenseMod: 0,
+                        attackDamageMod 20,
+                        attackSpeedMod 0
                       }
                     }
                   },
                   {
                     PutRequest: {
                       Item: {
-                        name: "sword",
+                        name: "Dagger",
+                        healthMod: 0,
+                        defenseMod: 0,
+                        attackDamageMod 0,
+                        attackSpeedMod 15
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Belt",
+                        healthMod: 100,
+                        defenseMod: 0,
+                        attackDamageMod 0,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Reinforced Spike Shield",
+                        healthMod: 30,
+                        defenseMod: 100,
+                        attackDamageMod 10,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Lance & Shield",
+                        healthMod: 100,
+                        defenseMod: 50,
+                        attackDamageMod 40,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Parrying Shield",
                         healthMod: 50,
-                        defenseMod: 10,
-                        attackDamageMod 20
+                        defenseMod: 35,
+                        attackDamageMod 0,
+                        attackSpeedMod 25
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Fortyfing Bulwark",
+                        healthMod: 150,
+                        defenseMod: 60,
+                        attackDamageMod 10,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Great Sword",
+                        healthMod: 200,
+                        defenseMod: 30,
+                        attackDamageMod 80,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Balanced Rapier",
+                        healthMod: 0,
+                        defenseMod: 15,
+                        attackDamageMod 50,
+                        attackSpeedMod 25
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Inspiring Banner",
+                        healthMod: 300,
+                        defenseMod: 20,
+                        attackDamageMod 40,
+                        attackSpeedMod 0
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Twin Daggers",
+                        healthMod: 0,
+                        defenseMod: 20,
+                        attackDamageMod 30,
+                        attackSpeedMod 70
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Inspiring Banner",
+                        healthMod: 150,
+                        defenseMod: 30,
+                        attackDamageMod 0,
+                        attackSpeedMod 45
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Suspenders of Hope",
+                        healthMod: 500,
+                        defenseMod: 80,
+                        attackDamageMod 30,
+                        attackSpeedMod 0
                       }
                     }
                   }                  
@@ -96,7 +220,7 @@ Resources:
       # 2020-02-27: [bp] updated from nodejs10.x in case it matters
       Runtime: nodejs12.x
       Timeout: 60
-  InitializeEventsTable:
+  InitializeItemModelTable:
     Type: Custom::InitFunction
     DependsOn: ItemModelTable
     Properties:

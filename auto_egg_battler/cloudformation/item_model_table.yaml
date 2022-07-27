@@ -1,5 +1,5 @@
 Resources:
-  ItemModelTable:
+  ItemModelTable3:
     Type: AWS::DynamoDB::Table
     Properties:
       "AttributeDefinitions":
@@ -9,7 +9,7 @@ Resources:
         - "AttributeName": "name"
           "KeyType": "HASH"
       BillingMode: PAY_PER_REQUEST
-      TableName: "ItemModelTable"
+      TableName: "ItemModelTable3"
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
@@ -48,15 +48,15 @@ Resources:
             console.log(JSON.stringify(event,null,2));
             var params = {
               RequestItems: {
-                "ItemModel": [
+                "ItemModelTable3": [
                   {
                     PutRequest: {
                       Item: {
                         name: "Shield",
                         healthMod: 0,
                         defenseMod: 30,
-                        attackDamageMod 0,
-                        attackSpeedMod 0
+                        attackDamageMod: 0,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -66,8 +66,8 @@ Resources:
                         name: "Sword",
                         healthMod: 0,
                         defenseMod: 0,
-                        attackDamageMod 20,
-                        attackSpeedMod 0
+                        attackDamageMod: 20,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -77,8 +77,8 @@ Resources:
                         name: "Dagger",
                         healthMod: 0,
                         defenseMod: 0,
-                        attackDamageMod 0,
-                        attackSpeedMod 15
+                        attackDamageMod: 0,
+                        attackSpeedMod: 15
                       }
                     }
                   },
@@ -88,8 +88,8 @@ Resources:
                         name: "Belt",
                         healthMod: 100,
                         defenseMod: 0,
-                        attackDamageMod 0,
-                        attackSpeedMod 0
+                        attackDamageMod: 0,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -99,8 +99,8 @@ Resources:
                         name: "Reinforced Spike Shield",
                         healthMod: 30,
                         defenseMod: 100,
-                        attackDamageMod 10,
-                        attackSpeedMod 0
+                        attackDamageMod: 10,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -110,8 +110,8 @@ Resources:
                         name: "Lance & Shield",
                         healthMod: 100,
                         defenseMod: 50,
-                        attackDamageMod 40,
-                        attackSpeedMod 0
+                        attackDamageMod: 40,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -121,8 +121,8 @@ Resources:
                         name: "Parrying Shield",
                         healthMod: 50,
                         defenseMod: 35,
-                        attackDamageMod 0,
-                        attackSpeedMod 25
+                        attackDamageMod: 0,
+                        attackSpeedMod: 25
                       }
                     }
                   },
@@ -132,8 +132,8 @@ Resources:
                         name: "Fortyfing Bulwark",
                         healthMod: 150,
                         defenseMod: 60,
-                        attackDamageMod 10,
-                        attackSpeedMod 0
+                        attackDamageMod: 10,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -143,8 +143,8 @@ Resources:
                         name: "Great Sword",
                         healthMod: 200,
                         defenseMod: 30,
-                        attackDamageMod 80,
-                        attackSpeedMod 0
+                        attackDamageMod: 80,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -154,8 +154,8 @@ Resources:
                         name: "Balanced Rapier",
                         healthMod: 0,
                         defenseMod: 15,
-                        attackDamageMod 50,
-                        attackSpeedMod 25
+                        attackDamageMod: 50,
+                        attackSpeedMod: 25
                       }
                     }
                   },
@@ -165,8 +165,8 @@ Resources:
                         name: "Inspiring Banner",
                         healthMod: 300,
                         defenseMod: 20,
-                        attackDamageMod 40,
-                        attackSpeedMod 0
+                        attackDamageMod: 40,
+                        attackSpeedMod: 0
                       }
                     }
                   },
@@ -176,8 +176,8 @@ Resources:
                         name: "Twin Daggers",
                         healthMod: 0,
                         defenseMod: 20,
-                        attackDamageMod 30,
-                        attackSpeedMod 70
+                        attackDamageMod: 30,
+                        attackSpeedMod: 70
                       }
                     }
                   },
@@ -187,8 +187,8 @@ Resources:
                         name: "Inspiring Banner",
                         healthMod: 150,
                         defenseMod: 30,
-                        attackDamageMod 0,
-                        attackSpeedMod 45
+                        attackDamageMod: 0,
+                        attackSpeedMod: 45
                       }
                     }
                   },
@@ -198,8 +198,8 @@ Resources:
                         name: "Suspenders of Hope",
                         healthMod: 500,
                         defenseMod: 80,
-                        attackDamageMod 30,
-                        attackSpeedMod 0
+                        attackDamageMod: 30,
+                        attackSpeedMod: 0
                       }
                     }
                   }                  
@@ -220,11 +220,11 @@ Resources:
       # 2020-02-27: [bp] updated from nodejs10.x in case it matters
       Runtime: nodejs12.x
       Timeout: 60
-  InitializeItemModelTable:
+  InitializeItemModelTable3:
     Type: Custom::InitFunction
-    DependsOn: ItemModelTable
+    DependsOn: ItemModelTable3
     Properties:
       ServiceToken:
         Fn::GetAtt: [ InitFunction , "Arn" ]
       DynamoTableName:
-        Ref: ItemModelTable
+        Ref: ItemModelTable3

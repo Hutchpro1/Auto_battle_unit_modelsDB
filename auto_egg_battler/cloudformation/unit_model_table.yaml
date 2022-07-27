@@ -1,5 +1,5 @@
 Resources:
-  UnitModelTable:
+  UnitModelTable2:
     Type: AWS::DynamoDB::Table
     Properties:
       "AttributeDefinitions":
@@ -9,7 +9,7 @@ Resources:
         - "AttributeName": "name"
           "KeyType": "HASH"
       BillingMode: PAY_PER_REQUEST
-      TableName: "UnitModelTable"
+      TableName: "UnitModelTable2"
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
@@ -48,14 +48,14 @@ Resources:
             console.log(JSON.stringify(event,null,2));
             var params = {
               RequestItems: {
-                "UnitModel": [  
+                "UnitModelTable2": [  
                   {
                     PutRequest: {
                       Item: {
                         name: "Holy Crusader",
                         health: 275,
                         defense: 80,
-                        attackDamage 50
+                        attackDamage: 50
                       }
                     }
                   },
@@ -65,7 +65,7 @@ Resources:
                         name: "Barbarian",
                         health: 500,
                         defense: 40,
-                        attackDamage 50
+                        attackDamage: 50
                       }
                     }
                   },
@@ -75,7 +75,7 @@ Resources:
                         name: "Heavy Lancer",
                         health: 300,
                         defense: 80,
-                        attackDamage 70
+                        attackDamage: 70
                       }
                     }
                   },
@@ -85,7 +85,7 @@ Resources:
                         name: "Longbow Man",
                         health: 200,
                         defense: 30,
-                        attackDamage 110
+                        attackDamage: 110
                       }
                     }
                   },
@@ -95,7 +95,7 @@ Resources:
                         name: "Sabotuer",
                         health: 250,
                         defense: 60,
-                        attackDamage 130
+                        attackDamage: 130
                       }
                     }
                   },
@@ -105,7 +105,7 @@ Resources:
                         name: "Gunner",
                         health: 300,
                         defense: 50,
-                        attackDamage 120
+                        attackDamage: 120
                       }
                     }
                   },
@@ -115,7 +115,7 @@ Resources:
                         name: "Ninja",
                         health: 250,
                         defense: 50,
-                        attackDamage 170
+                        attackDamage: 170
                       }
                     }
                   },
@@ -125,7 +125,7 @@ Resources:
                         name: "Spell Sealer",
                         health: 250,
                         defense: 40,
-                        attackDamage 155
+                        attackDamage: 155
                       }
                     }
                   },
@@ -135,7 +135,7 @@ Resources:
                         name: "Moon Monk",
                         health: 300,
                         defense: 70,
-                        attackDamage 120
+                        attackDamage: 120
                       }
                     }
                   },
@@ -145,7 +145,7 @@ Resources:
                         name: " Shadow Mage",
                         health: 450,
                         defense: 100,
-                        attackDamage 50
+                        attackDamage: 50
                       }
                     }
                   },
@@ -155,7 +155,7 @@ Resources:
                         name: "Summoner",
                         health: 240,
                         defense: 50,
-                        attackDamage 50
+                        attackDamage: 50
                       }
                     }
                   },
@@ -165,7 +165,7 @@ Resources:
                         name: "Holy Succubus",
                         health: 280,
                         defense: 20,
-                        attackDamage 110
+                        attackDamage: 110
                       }
                     }
                   },
@@ -175,7 +175,7 @@ Resources:
                         name: "Iron Breaker",
                         health: 350,
                         defense: 100,
-                        attackDamage 60
+                        attackDamage: 60
                       }
                     }
                   },
@@ -185,7 +185,7 @@ Resources:
                         name: "Mr. Muscle",
                         health: 400,
                         defense: 60,
-                        attackDamage 90
+                        attackDamage: 90
                       }
                     }
                   },
@@ -195,7 +195,7 @@ Resources:
                         name: "Vampire",
                         health: 300,
                         defense: 75,
-                        attackDamage 80
+                        attackDamage: 80
                       }
                     }
                   },
@@ -205,7 +205,7 @@ Resources:
                         name: "Magician",
                         health: 250,
                         defense: 55,
-                        attackDamage 80
+                        attackDamage: 80
                       }
                     }
                   },
@@ -215,7 +215,7 @@ Resources:
                         name: "Priestess",
                         health: 220,
                         defense: 60,
-                        attackDamage 40
+                        attackDamage: 40
                       }
                     }
                   },
@@ -225,7 +225,7 @@ Resources:
                         name: "Absorber",
                         health: 600,
                         defense: 20,
-                        attackDamage 20
+                        attackDamage: 20
                       }
                     }
                   }                  
@@ -246,11 +246,11 @@ Resources:
       # 2020-02-27: [bp] updated from nodejs10.x in case it matters
       Runtime: nodejs12.x
       Timeout: 60
-  InitializeUnitModelTable:
+  InitializeUnitModelTable2:
     Type: Custom::InitFunction
-    DependsOn: UnitModelTable
+    DependsOn: UnitModelTable2
     Properties:
       ServiceToken:
         Fn::GetAtt: [ InitFunction , "Arn" ]
       DynamoTableName:
-        Ref: UnitModelTable
+        Ref: UnitModelTable2

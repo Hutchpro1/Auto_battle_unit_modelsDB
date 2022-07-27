@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
 
 import java.sql.Array;
 
-@DynamoDBTable(tableName =" unit_model_table")
+@DynamoDBTable(tableName ="UnitModelTable")
 public class UnitModel {
     private String name;
     private Integer health;

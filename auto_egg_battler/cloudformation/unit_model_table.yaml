@@ -9,7 +9,7 @@ Resources:
         - "AttributeName": "name"
           "KeyType": "HASH"
       BillingMode: PAY_PER_REQUEST
-      TableName: "UnitModel"
+      TableName: "UnitModelTable"
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
@@ -51,7 +51,7 @@ Resources:
                 "UnitModel": [  
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Holy Crusader",
                         health: 275,
                         defense: 80,
@@ -61,7 +61,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Barbarian",
                         health: 500,
                         defense: 40,
@@ -71,7 +71,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Heavy Lancer",
                         health: 300,
                         defense: 80,
@@ -81,7 +81,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Longbow Man",
                         health: 200,
                         defense: 30,
@@ -91,7 +91,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Sabotuer",
                         health: 250,
                         defense: 60,
@@ -101,7 +101,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Gunner",
                         health: 300,
                         defense: 50,
@@ -111,7 +111,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Ninja",
                         health: 250,
                         defense: 50,
@@ -121,7 +121,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Spell Sealer",
                         health: 250,
                         defense: 40,
@@ -131,7 +131,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Moon Monk",
                         health: 300,
                         defense: 70,
@@ -141,7 +141,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: " Shadow Mage",
                         health: 450,
                         defense: 100,
@@ -151,7 +151,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Summoner",
                         health: 240,
                         defense: 50,
@@ -161,7 +161,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Holy Succubus",
                         health: 280,
                         defense: 20,
@@ -171,7 +171,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Iron Breaker",
                         health: 350,
                         defense: 100,
@@ -181,7 +181,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Mr. Muscle",
                         health: 400,
                         defense: 60,
@@ -191,7 +191,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Vampire",
                         health: 300,
                         defense: 75,
@@ -201,7 +201,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Magician",
                         health: 250,
                         defense: 55,
@@ -211,7 +211,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Priestess",
                         health: 220,
                         defense: 60,
@@ -221,7 +221,7 @@ Resources:
                   },
                   {
                     PutRequest: {
-                      Character: {
+                      Item: {
                         name: "Absorber",
                         health: 600,
                         defense: 20,

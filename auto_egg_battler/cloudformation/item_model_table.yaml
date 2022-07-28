@@ -107,7 +107,7 @@ Resources:
                   {
                     PutRequest: {
                       Item: {
-                        name: "Lance & Shield",
+                        name: "Lance Shield",
                         healthMod: 100,
                         defenseMod: 50,
                         attackDamageMod: 40,

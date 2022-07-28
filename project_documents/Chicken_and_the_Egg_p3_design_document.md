@@ -84,7 +84,7 @@ Initial launch we are using Attack damage, Defensive armor, and Health. later we
 4. Setup For AI, then setup multiplayer <br />
 AI system will be built into the unit logic and other for single player we will just use default board layouts.
 5. API calls backend. <br />
-Using AWS cloudformation, DynamoDB, S3 Bucket, API Gateway, and Lambda functions.
+Using AWS auto_egg_battler.cloudformation, DynamoDB, S3 Bucket, API Gateway, and Lambda functions.
 6. Frontend. <br />
 Using Node.js, Axios, and React.
 
@@ -99,13 +99,13 @@ UnitModel<br />
 &nbsp;&nbsp;int attackDamage;<br />
 
 CurrentUnitModel<br />
-&nbsp;&nbsp;String unitID;<br />
+&nbsp;&nbsp;String unitId;<br />
 &nbsp;&nbsp;String name;<br />
 &nbsp;&nbsp;String boardLocation;<br />
 &nbsp;&nbsp;int maxHealth;<br />
 &nbsp;&nbsp;int maxDefence;<br />
 &nbsp;&nbsp;int maxAttackDamage;<br />
-&nbsp;&nbsp;List `<ItemName>` itemIDs;
+&nbsp;&nbsp;List `<ItemName>` itemIds;
     
 ItemModel<br />
 &nbsp;&nbsp;String name;<br />
@@ -114,8 +114,8 @@ ItemModel<br />
 &nbsp;&nbsp;int attackDamageMod;<br />
 
 BoardModel<br />
-&nbsp;&nbsp;String boardID;<br />
-&nbsp;&nbsp;List`<CurrentUnitIDs>`units;
+&nbsp;&nbsp;String boardId;<br />
+&nbsp;&nbsp;List`<CurrentUnitIds>`units;
 
 ## 6.2 Post StartGame EndPoint
 * Accepts Post request to /StartGame

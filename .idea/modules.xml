@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LibrariesAndUtilities/LibrariesAndUtilities.iml" filepath="$PROJECT_DIR$/LibrariesAndUtilities/LibrariesAndUtilities.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bd-team-project-chicken-and-the-egg-3.iml" filepath="$PROJECT_DIR$/.idea/bd-team-project-chicken-and-the-egg-3.iml" />
     </modules>
   </component>

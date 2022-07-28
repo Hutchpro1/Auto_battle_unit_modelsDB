@@ -1,0 +1,16 @@
+Resources:
+  BoardModelTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      "AttributeDefinitions":
+        - "AttributeName": "boardId"
+          "AttributeType": "S"
+        - "AttributeName": "units"
+          "AttributeType": "S"
+      "KeySchema":
+        - "AttributeName": "boardId"
+          "KeyType": "HASH"
+        - "AttributeName": "units"
+          "KeyType": "RANGE"
+      BillingMode: PAY_PER_REQUEST
+      TableName: "BoardModel"

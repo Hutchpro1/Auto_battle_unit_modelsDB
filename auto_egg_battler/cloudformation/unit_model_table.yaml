@@ -1,0 +1,256 @@
+Resources:
+  UnitModelTable2:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      "AttributeDefinitions":
+        - "AttributeName": "name"
+          "AttributeType": "S"
+      "KeySchema":
+        - "AttributeName": "name"
+          "KeyType": "HASH"
+      BillingMode: PAY_PER_REQUEST
+      TableName: "UnitModelTable2"
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Path: "/"
+      Policies:
+        - PolicyName: dynamodbAccessRole
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:*
+                Resource: "*"
+              - Effect: Allow
+                Action:
+                  - logs:*
+                Resource: "*"
+  InitFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        ZipFile: >
+          const AWS = require("aws-sdk");
+          const response = require('./cfn-response');
+          const docClient = new AWS.DynamoDB.DocumentClient();
+          exports.handler = function(event, context) {
+            console.log(JSON.stringify(event,null,2));
+            var params = {
+              RequestItems: {
+                "UnitModelTable2": [  
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Holy Crusader",
+                        health: 275,
+                        defense: 80,
+                        attackDamage: 50
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Barbarian",
+                        health: 500,
+                        defense: 40,
+                        attackDamage: 50
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Heavy Lancer",
+                        health: 300,
+                        defense: 80,
+                        attackDamage: 70
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Longbow Man",
+                        health: 200,
+                        defense: 30,
+                        attackDamage: 110
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Sabotuer",
+                        health: 250,
+                        defense: 60,
+                        attackDamage: 130
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Gunner",
+                        health: 300,
+                        defense: 50,
+                        attackDamage: 120
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Ninja",
+                        health: 250,
+                        defense: 50,
+                        attackDamage: 170
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Spell Sealer",
+                        health: 250,
+                        defense: 40,
+                        attackDamage: 155
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Moon Monk",
+                        health: 300,
+                        defense: 70,
+                        attackDamage: 120
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: " Shadow Mage",
+                        health: 450,
+                        defense: 100,
+                        attackDamage: 50
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Summoner",
+                        health: 240,
+                        defense: 50,
+                        attackDamage: 50
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Holy Succubus",
+                        health: 280,
+                        defense: 20,
+                        attackDamage: 110
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Iron Breaker",
+                        health: 350,
+                        defense: 100,
+                        attackDamage: 60
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Mr. Muscle",
+                        health: 400,
+                        defense: 60,
+                        attackDamage: 90
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Vampire",
+                        health: 300,
+                        defense: 75,
+                        attackDamage: 80
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Magician",
+                        health: 250,
+                        defense: 55,
+                        attackDamage: 80
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Priestess",
+                        health: 220,
+                        defense: 60,
+                        attackDamage: 40
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Absorber",
+                        health: 600,
+                        defense: 20,
+                        attackDamage: 20
+                      }
+                    }
+                  }                  
+                ]
+              }
+            };
+            docClient.batchWrite(params, function(err, data) {
+              if (err) {
+                response.send(event, context, "FAILED", {});
+              } else {
+                response.send(event, context, "SUCCESS", {});
+              }
+            });
+          };
+      Handler: index.handler
+      Role:
+        Fn::GetAtt: [ LambdaRole , "Arn" ]
+      # 2020-02-27: [bp] updated from nodejs10.x in case it matters
+      Runtime: nodejs12.x
+      Timeout: 60
+  InitializeUnitModelTable2:
+    Type: Custom::InitFunction
+    DependsOn: UnitModelTable2
+    Properties:
+      ServiceToken:
+        Fn::GetAtt: [ InitFunction , "Arn" ]
+      DynamoTableName:
+        Ref: UnitModelTable2

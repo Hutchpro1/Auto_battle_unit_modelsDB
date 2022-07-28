@@ -1,0 +1,311 @@
+Classes:
+
+Tank
+high hp and defense
+low attack
+damage mitigation
+
+
+Asassin
+low hp
+high attack
+jump first move.
+high damage ability
+
+Ranged
+low hp
+high damage
+damage/utility abilty
+
+Mage
+low hp
+low damage
+high damage ablity
+
+
+
+Brusier
+high damage good defenses.
+low range
+med health.
+
+
+support
+low health and defenses
+heals sheilds cc
+
+/////////////////////////////////////////////////
+
+Tanks///////////////////////////////////////////
+
+01 Holy Crusader
+Tank/Support
+range 1
+hp: 275
+defense 80
+at: 50
+large shield to 1 ally
+
+02 Heavy Lancer
+Tank/Brusier
+range 2
+Hp: 300
+defense 80
+at: 70
+Pierce attack in line 3 spaces
+
+03 Barbarian
+Tank/Brusier
+range 1
+hp: 500
+df: 40
+at: 50
+damage & attack speed increae as health goes down.
+
+04 Paladin
+Tank/mage
+range 1
+hp: 300
+def:60
+attack : 80
+smites lowest health champion within 3 spaces
+
+05 Knight
+tank/tank
+hp:500
+def:100
+attack:40
+Sheild lowers damage from infront by 20
+
+06 Magic Brambler
+tank/mage
+range 1
+hp 380
+attack 50
+defense 80
+refects 30% of damage to attackers for 5 seconds
+
+
+
+Ranged////////////////////////////////////////
+
+07 Longbow man
+ranged/ranged
+range: 6
+hp 200
+attack 110
+defense 30
+posion arrow deals 15 dps for 3 seconds
+
+08 Sabotuer
+ranged/asassin
+range 2
+hp 250
+attack 130
+defense 60
+throws  a bomb that expodes after 2 seconds deals 100
+
+09 Gunner
+ranged/mage
+range 3
+hp: 300
+attack: 120(65)
+defense 50
+each attack attacks 2 times. flashes grenade deals 60 damages blinds for 1 seconds
+
+10 Crossbowman
+Ranged tank
+hp 300
+attack:160
+defense:40
+ranged defense increse to 100
+
+11 Pirate
+ranged//bruiser
+range 1
+hp 360
+atack 140
+defense 70
+shoots character within 4 range with lowest life
+
+Asassin////////////////////////////////////////////////////////
+
+12 Ninja
+Asassin/Asassin
+range 1
+hp 250
+attack 170
+defense 50
+slashes through enemy deals 150 damage if he can he lands on other side.
+
+13 Spell Sealer
+Asassin/mage
+range 1
+hp 250
+attack 155
+defense 40
+attacks silence for 1 second.silence champions take 20 extra damage.
+
+14 Moon Monk
+Asassin/Brusier
+range 1
+hp 300
+attack 120
+defense 70
+kicks unit 2 spaces if units colieds with edge or unit they are stuned for 2 seconds.
+
+
+15 Serial Killer
+Asassin/Asassin
+range 1
+hp 180
+attack 190
+defense 20
+dashes to the lowest health character and slashs it for 220 damage. untargetable while dashing.
+
+Mage///////////////////////////////////////////////////////////
+
+16 Fire Mage
+Mage/Mage
+range 4
+hp 220
+attack 75
+attacks burn enmy for 10 damages for 3 seconds
+
+17 White Mage
+Mage/support
+range 5
+hp 200
+attack 70
+every 3 attacks. heals all heroes arond the champ withing 4 spaces for 60 damage.
+
+18 Wild Mage
+Mage/brusier
+Range 3
+hp 300
+attack 85
+all champs within 4 spaces attack faster.
+
+19 Shadow mage
+Tank/mage/anti-mage
+range 0
+hp 450
+attack 0
+defense 100
+all enemies with in 4 spaces take 5% max health dammage per second.heals 5 life for each unit affected.
+
+20 Summoner
+Mage/support
+range 4
+hp 240
+attack 50
+defense 50
+every 3 seconds summon a spirit with 100 health 30 defense and 50 attack.
+
+21 Holy Succubus
+Mage/Support
+range 3
+hp 280
+attack 110
+defense 20
+30% of all damage dealth heals the champion with lowest health
+
+
+Brusier////////////////////////////////////////////////////////////////////////////////
+
+22 Iron Breaker
+Bruiser/tank/anti-tank
+range 1
+hp 350
+attack 60
+0defense 100
+every third attack deals 20% current health damage
+
+23 Mr. Muscle
+Brusier/tank
+range 1
+hp 400
+attack 90
+defense 60
+slams ground in a cone infront of you  stuns enemies for 2 seconds.
+
+24 Vampire
+Brusier/Suport
+range 2
+Hp 300
+attack 80
+defense 75
+deals 100 damage to champion while healing 60
+
+25 Skeltal  ikpik 0010../iSpearman
+range 3
+HP 320
+attak 80
+defense 100
+deals damge to 2 units infront of it.
+
+26 Swashbuckler.
+Brusier/Brusier
+range 1
+hp 290
+attack 125
+defense 80
+20% chance of attacks of range 1 being parried. 60% for ranged.
+
+27 life taker
+hp 150
+range 1
+attack 250
+at the start of battle will links its self to random enemy unit when life taker dies so does the enemy unit. if unit dies before life taker life takers max hp adds enemy units hp.
+
+
+
+
+Support///////////////////////////////////////////////////////////////////////////////
+
+
+28 Magician
+Support/mage
+range 3
+hp 250
+attack 80
+defense 55
+will turn the nearest champion into a bird for 3 seconds.
+
+29 Sword Sharpener
+Support/support
+range 2
+hp 220
+increase damage for 3 nearest caracters by 20
+
+30 Priestess
+support/support
+range 5
+hp 220
+attack 40
+defense 60
+heals the lowest health champ for 200.
+
+31 Sicilian
+support/mage
+range 4
+hp 300
+attack 50
+defense 60
+attacks poison enemys. poisoned enemies will have 20% reduced damage for 3 seconds. prefers to attack unpoisoned enemies.
+
+32 Absorber
+Support/tank
+range 1
+hp 600
+attack 20
+defense 20
+units within 2 units have 15% of damage taken reflected to absorber. when unit dies explodes dealing all damage abosrbed. range 4.
+
+
+33 life balancer																																															1`QWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWQWc                                                                                                                                                                                          uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu	c,,,,,,,,,,,,,saasssssssssssssssssssssssssssssssssssssssssssss
+range 0
+hp 100
+attack 0
+defense 20
+constantly damages enemies for 3% max health damage. heals all units for 3% missing health damage

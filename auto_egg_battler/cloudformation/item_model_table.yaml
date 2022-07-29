@@ -1,5 +1,5 @@
 Resources:
-  ItemModelTable3:
+  ItemModelTable1:
     Type: AWS::DynamoDB::Table
     Properties:
       "AttributeDefinitions":
@@ -9,7 +9,7 @@ Resources:
         - "AttributeName": "name"
           "KeyType": "HASH"
       BillingMode: PAY_PER_REQUEST
-      TableName: "ItemModelTable3"
+      TableName: "ItemModelTable1"
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
@@ -48,7 +48,7 @@ Resources:
             console.log(JSON.stringify(event,null,2));
             var params = {
               RequestItems: {
-                "ItemModelTable3": [
+                "ItemModelTable1": [
                   {
                     PutRequest: {
                       Item: {
@@ -107,7 +107,7 @@ Resources:
                   {
                     PutRequest: {
                       Item: {
-                        name: "Lance Shield",
+                        name: "Lance & Shield",
                         healthMod: 100,
                         defenseMod: 50,
                         attackDamageMod: 40,
@@ -162,22 +162,11 @@ Resources:
                   {
                     PutRequest: {
                       Item: {
-                        name: "Inspiring Banner",
+                        name: "Spiked Belt",
                         healthMod: 300,
                         defenseMod: 20,
                         attackDamageMod: 40,
                         attackSpeedMod: 0
-                      }
-                    }
-                  },
-                  {
-                    PutRequest: {
-                      Item: {
-                        name: "Twin Daggers",
-                        healthMod: 0,
-                        defenseMod: 20,
-                        attackDamageMod: 30,
-                        attackSpeedMod: 70
                       }
                     }
                   },
@@ -189,6 +178,17 @@ Resources:
                         defenseMod: 30,
                         attackDamageMod: 0,
                         attackSpeedMod: 45
+                      }
+                    }
+                  },
+                  {
+                    PutRequest: {
+                      Item: {
+                        name: "Twin Daggers",
+                        healthMod: 0,
+                        defenseMod: 20,
+                        attackDamageMod: 30,
+                        attackSpeedMod: 70
                       }
                     }
                   },
@@ -220,11 +220,11 @@ Resources:
       # 2020-02-27: [bp] updated from nodejs10.x in case it matters
       Runtime: nodejs12.x
       Timeout: 60
-  InitializeItemModelTable3:
+  InitializeItemModelTable1:
     Type: Custom::InitFunction
-    DependsOn: ItemModelTable3
+    DependsOn: ItemModelTable1
     Properties:
       ServiceToken:
         Fn::GetAtt: [ InitFunction , "Arn" ]
       DynamoTableName:
-        Ref: ItemModelTable3
+        Ref: ItemModelTable1

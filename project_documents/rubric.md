@@ -24,7 +24,7 @@ We want you to see the full set of expectations for transparency’s sake.*
 |[Team Charter](team_charter.md)                                  |Sprint 1 Module 3         | July 12, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
 |[Design Document](design_document.md)                            |Sprint 1 Friday by 5pm    | July 14, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
 |Project Completion (Feature Complete)                            |Sprint 3 Friday by 5pm    | July 29, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                      |
-|[Team Reflection](reflection.md)                                 |Sprint 4 Wednesday by 5PM |                |                                  |
+|[Team Reflection](reflection.md)                                 |Sprint 4 Wednesday by 5PM | August 1, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                     |
 |[Accomplishment Tracking (person 1)](accomplishment_tracking.md) |Sprint 4 Wednesday by 5PM |                |                                  |
 |[Accomplishment Tracking (person 2)](accomplishment_tracking.md) |Sprint 4 Wednesday by 5PM |                |                                  |
 |[Accomplishment Tracking (person 3)](accomplishment_tracking.md) |Sprint 4 Wednesday by 5PM |                |                                  |

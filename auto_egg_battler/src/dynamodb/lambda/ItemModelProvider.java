@@ -1,11 +1,15 @@
-package backend.models;
+package dynamodb.lambda;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+import models.requests.ItemModelRequest;
+import models.requests.UnitModelRequest;
 
 @DynamoDBTable(tableName = "ItemModelTable")
-public class ItemModel {
+public class ItemModelProvider implements RequestHandler<ItemModelRequest, UnitModelRequest> {
 
     private String name;
     private Integer healthMod;
@@ -60,4 +64,8 @@ public class ItemModel {
         this.attackSpeedMod = attackSpeedMod;
     }
 
+    @Override
+    public UnitModelRequest handleRequest(ItemModelRequest input, Context context) {
+        return null;
+    }
 }

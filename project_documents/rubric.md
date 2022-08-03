@@ -17,22 +17,22 @@ We want you to see the full set of expectations for transparency’s sake.*
 
 *Provide links to the following project deliverables:*
 
-| Deliverable                                                          |Due Date                  | Date Completed |URL                               |
-|----------------------------------------------------------------------|---                       |----------------|---                               |
-| Team name                                                            |Sprint 1 Module 1         | July 11, 2022  |name:  Chicken and the Egg^3      |
-| [Design Document - problem statement](design_document.md)            |Sprint 1 Module 2         | July 11, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
-| [Team Charter](team_charter.md)                                      |Sprint 1 Module 3         | July 12, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
-| [Design Document](design_document.md)                                |Sprint 1 Friday by 5pm    | July 14, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
-| Project Completion (Feature Complete)                                |Sprint 3 Friday by 5pm    | July 29, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                      |
-| [Team Reflection](reflection.md)                                     |Sprint 4 Wednesday by 5PM | August 1, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3/blob/main/project_documents/chicken_and_the_egg_3/reflection.md                                     |
-| [Accomplishment Tracking (person 1)](accomplishment_tracking.md)     |Sprint 4 Wednesday by 5PM | August 2, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                     |
-| [Accomplishment Tracking (Pedro Linares](project_documents/AccomplishmentTracking/PedroLinares) |Sprint 4 Wednesday by 5PM | August 2, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                   |
-| [Accomplishment Tracking (person 3)](accomplishment_tracking.md)     |Sprint 4 Wednesday by 5PM | August 2, 2022 | https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                    |
-| [Accomplishment Tracking (person 4)](accomplishment_tracking.md)     |Sprint 4 Wednesday by 5PM | August 2, 2022 | https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                    |
-| Self Reflection (person 1)                                           |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
-| Self Reflection (person 2)                                           |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
-| Self Reflection (person 3)                                           |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
-| Self Reflection (person 4)                                           |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
+| Deliverable                                                                                      |Due Date                  | Date Completed |URL                               |
+|--------------------------------------------------------------------------------------------------|---                       |----------------|---                               |
+| Team name                                                                                        |Sprint 1 Module 1         | July 11, 2022  |name:  Chicken and the Egg^3      |
+| [Design Document - problem statement](design_document.md)                                        |Sprint 1 Module 2         | July 11, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
+| [Team Charter](team_charter.md)                                                                  |Sprint 1 Module 3         | July 12, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
+| [Design Document](design_document.md)                                                            |Sprint 1 Friday by 5pm    | July 14, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                  |
+| Project Completion (Feature Complete)                                                            |Sprint 3 Friday by 5pm    | July 29, 2022  |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                      |
+| [Team Reflection](reflection.md)                                                                 |Sprint 4 Wednesday by 5PM | August 1, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3/blob/main/project_documents/chicken_and_the_egg_3/reflection.md                                     |
+| [Accomplishment Tracking (Jonathan Riedemann)](accomplishment_tracking.md)                       |Sprint 4 Wednesday by 5PM | August 2, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                     |
+| [Accomplishment Tracking (Pedro Linares)](project_documents/AccomplishmentTracking/PedroLinares) |Sprint 4 Wednesday by 5PM | August 2, 2022 |https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                   |
+| [Accomplishment Tracking (David Ramirez )](accomplishment_tracking.md)                                 |Sprint 4 Wednesday by 5PM | August 2, 2022 | https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                    |
+| [Accomplishment Tracking (person 4)](accomplishment_tracking.md)                                 |Sprint 4 Wednesday by 5PM | August 2, 2022 | https://github.com/BloomTechBackend/bd-team-project-chicken-and-the-egg-3                                    |
+| Self Reflection (person 1)                                                                       |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
+| Self Reflection (person 2)                                                                       |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
+| Self Reflection (person 3)                                                                       |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
+| Self Reflection (person 4)                                                                       |Sprint 4 Wednesday by 5PM |                |n/a (will be submitted via Canvas - "Wrap-up" section) |
 
 ## Technical Learning Objectives
 
@@ -156,12 +156,12 @@ Get Unit characters <br />
 **Learn a new technology.** For each team member, list something new that that
 team member learned:
 
-| Team Member   | Something new the team member learned |   
-|---------------|---------------------------------------|
-| Pedro Linares | Learned cloudformation yaml files     |   
-|               |                                       |     
-|               |                                       |     
-|               |                                       |     
+| Team Member   | Something new the team member learned                |   
+|---------------|------------------------------------------------------|
+| Pedro Linares | Learned cloudformation yaml files                    |   
+| Jonathan Riedemann| Have a better understanding of JavaScript variables. |     
+|David Ramirez| Learned character sprite animation.                  |     
+|               |                                                      |     
 
 **Identify key words to research to accomplish a technical goal | Use sources
 like sage and stack overflow to solve issues encountered while programming.**

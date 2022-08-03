@@ -1,0 +1,179 @@
+{
+    "units":[
+        {
+            "name":"Holy Crusader",
+            "health":"275",
+            "defense":"80",
+            "attack":"50",
+            "abilty":"large shield to 1 ally",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351540796080138/unknown.png"
+        },{
+            "name":"Heavy Lancer",
+            "health":"300",
+            "defense":"80",
+            "attack":"70",
+            "abilty":"Pierce attack in line 3 spaces",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004357405041250314/unknown.png"
+        },{
+            "name":"Barbarian",
+            "health":"500",
+            "defense":"40",
+            "attack":"50",
+            "abilty":"damage & attack speed increase as health goes down",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351620433334332/unknown.png"
+        },{
+            "name":"Paladin",
+            "health":"300",
+            "defense":"60",
+            "attack":"80",
+            "abilty":"smites lowest health champion within 3 spaces",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351671431872532/unknown.png"
+        },{
+            "name":"Knight",
+            "health":"500",
+            "defense":"100",
+            "attack":"40",
+            "abilty":"Sheild lowers damage from in-front by 20",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351762695725116/unknown.png"
+        },{
+            "name":"Magic Brambler",
+            "health":"380",
+            "defense":"80",
+            "attack":"50",
+            "abilty":"reflects 30% of damage to attackers for 5 seconds",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351847798145034/unknown.png"
+        },{
+            "name":"Longbow man",
+            "health":"200",
+            "defense":"30",
+            "attack":"100",
+            "abilty":"position arrow deals 15 dps for 3 seconds",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004351924524568586/unknown.png"
+        },{
+            "name":"Saboteur",
+            "health":"250",
+            "defense":"60",
+            "attack":"130",
+            "abilty":"throws a bomb that explodes after 2 seconds deals 100",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352007651479644/unknown.png"
+        },{
+            "name":"Crossbowman",
+            "health":"300",
+            "defense":"40",
+            "attack":"160",
+            "abilty":"ranged defense increase to 100",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004354844364132472/unknown.png"
+        },{
+            "name":"Ninja",
+            "health":"250",
+            "defense":"40",
+            "attack":"120",
+            "abilty":"slashes through enemy deals 150 damage if he can he lands on other side.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004354893630427226/unknown.png"
+        }
+        ,{
+            "name":"Spell Sealer",
+            "health":"300",
+            "defense":"70",
+            "attack":"190",
+            "abilty":"attacks silence for 1 second.silence champions take 20 extra damage.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352221590323220/unknown.png"
+        }
+        ,{
+            "name":"Moon Monk",
+            "health":"180",
+            "defense":"20",
+            "attack":"75",
+            "abilty":"kicks unit 2 spaces if units colieds with edge or unit they are stunned for 2 seconds.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352278528004148/unknown.png"
+        }
+        ,{
+            "name":"Serial Killer",
+            "health":"220",
+            "defense":"75",
+            "attack":"70",
+            "abilty":"dashes to the lowest health character and slashes it for 220 damage. untargetable while dashing.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352352704274533/unknown.png"
+        }
+        ,{
+            "name":"Fire Mage",
+            "health":"220",
+            "defense":"10",
+            "attack":"85",
+            "abilty":"attacks burn enemy for 10 damages for 3 seconds",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352435608899654/unknown.png"
+        }
+        ,{
+            "name":"White Mage",
+            "health":"200",
+            "defense":"10",
+            "attack":"70",
+            "abilty":"every 3 attacks. heals all heroes around the champ withing 4 spaces for 60 damage.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352521495662632/unknown.png"
+        }
+        ,{
+            "name":"Wild Mage",
+            "health":"300",
+            "defense":"10",
+            "attack":"85",
+            "abilty":"all champs within 4 spaces attack faster.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352580895383592/unknown.png"
+        }
+        ,{
+            "name":"Shadow mage",
+            "health":"450",
+            "defense":"100",
+            "attack":"0",
+            "abilty":"all enemies with in 4 spaces take 5% max health damage per second.heals 5 life for each unit affected.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352638160224286/unknown.png"
+        }
+        ,{
+            "name":"Summoner",
+            "health":"240",
+            "defense":"50",
+            "attack":"50",
+            "abilty":"every 3 seconds summon a spirit with 100 health 30 defense and 50 attack.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352709522116739/unknown.png"
+        }
+        ,{
+            "name":"Holy Succubus",
+            "health":"280",
+            "defense":"20",
+            "attack":"110",
+            "abilty":"30% of all damage death heals the champion with lowest health",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352753021227018/unknown.png"
+        }
+        ,{
+            "name":"Iron Breaker",
+            "health":"350",
+            "defense":"100",
+            "attack":"60",
+            "abilty":"every third attack deals 20% current health damage",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352823607185458/unknown.png"
+        }
+        ,{
+            "name":"Mr. Muscle",
+            "health":"400",
+            "defense":"60",
+            "attack":"90",
+            "abilty":"slams ground in a cone in-front of you  stuns enemies for 2 seconds.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352881815715861/unknown.png"
+        }
+        ,{
+            "name":"Vampire",
+            "health":"300",
+            "defense":"75",
+            "attack":"80",
+            "abilty":"deals 100 damage to champion while healing 60",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004352927676235806/unknown.png"
+        }
+        ,{
+            "name":"Skeleton Spearman",
+            "health":"320",
+            "defense":"100",
+            "attack":"80",
+            "abilty":"deals damage to 2 units in-front of it.",
+            "image":"https://cdn.discordapp.com/attachments/787054872511119402/1004353028838654062/unknown.png"
+        }
+    ]
+}
